@@ -1,19 +1,15 @@
-WorldsNomad Numeric Sequence Calculator
-===
-
-
-##Description
+# WorldsNomad Numeric Sequence Calculator
 
 A simple numeric sequence calculator is built to return selected sequence of numbers till the entered value is reached.
 ---
 
-##Author & Contributor List
+### Author & Contributor List
 
 Harkulant Singh Hundal
 ---
 
 
-##How to run
+### How to run
 ---
 
 Once the project has been cloned, open the solution in Visual Studio and run the WorldsNomadApi project.
