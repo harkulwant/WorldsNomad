@@ -1,0 +1,14 @@
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\WorldsNomad.Logic.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\WorldsNomad.Logic.pdb
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\Autofac.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\WorldsNomad.Model.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\WorldsNomad.Model.pdb
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\Autofac.xml
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\obj\Debug\WorldsNomad.Logic.csprojResolveAssemblyReference.cache
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\obj\Debug\WorldsNomad.Logic.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\obj\Debug\WorldsNomad.Logic.pdb
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\System.Net.Http.Formatting.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\System.Web.Http.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\Newtonsoft.Json.xml
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\System.Net.Http.Formatting.xml
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Logic\bin\Debug\System.Web.Http.xml

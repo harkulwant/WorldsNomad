@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WorldsNomadApi</name>
+    </assembly>
+    <members>
+        <member name="T:WorldsNomadApi.AutofacRegistration">
+            <summary>
+            Autofac registration
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.AutofacRegistration.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Register all modules, controllers and bindings
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:WorldsNomadApi.SwaggerConfig">
+            <summary>
+            Swagger configuration
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.SwaggerConfig.Register">
+            <summary>
+            Register the Swagger configuration on start-up
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.SwaggerConfig.GetXmlCommentsPath">
+            <summary>
+            Method to get xml comments path
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WorldsNomadApi.WebApiConfig">
+            <summary>
+            Default WebApiConfig
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Register Routes and ability to Map HttpAttribute routes
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:WorldsNomadApi.Controllers.v1.SequenceController">
+            <summary>
+            Sequence controller to get the different numeric sequences
+            </summary>
+        </member>
+        <member name="P:WorldsNomadApi.Controllers.v1.SequenceController.SequenceGenerator">
+            <summary>
+            Sequence generator logic
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.#ctor(WorldsNomad.Logic.Processor.ISequenceGenerator)">
+            <summary>
+            IOC injection by constructor
+            </summary>
+            <param name="sequenceGenerator"></param>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetAllSequences(System.Int32)">
+            <summary>
+            S3 Results
+            </summary>
+            <remarks>Get all avaiable number sequences for S3 Results</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetNumberSequence(System.Int32)">
+            <summary>
+            S3.1.1: Number sequence
+            </summary>
+            <remarks>All numbers up-to and including the number entered</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetOddNumberSequence(System.Int32)">
+            <summary>
+            S3.1.2: Odd number sequence
+            </summary>
+            <remarks>All odd numbers up-to and including the number entered</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetEvenNumberSequence(System.Int32)">
+            <summary>
+            S3.1.3: Even number sequence
+            </summary>
+            <remarks>All even numbers up-to and including the number entered</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetSpecialNumberSequence(System.Int32)">
+            <summary>
+            S3.1.4: Special number sequence
+            </summary>
+            <remarks>All numbers up-to and including the number entered, except 'C' when multiple of 3, 'E' when multiple of 5 and 'Z' when multiple of both 3 and 5</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="M:WorldsNomadApi.Controllers.v1.SequenceController.GetFibonacciNumberSequence(System.Int32)">
+            <summary>
+            S3.1.5: Fibonacci number sequence
+            </summary>
+            <remarks>All fibonacci number up-to and including the number entered</remarks>
+            <param name="input">value entered</param>
+            <returns></returns>
+        </member>
+        <member name="T:WorldsNomadApi.WebApiApplication">
+            <summary>
+            Global asax file to register startup events
+            </summary>
+        </member>
+        <member name="M:WorldsNomadApi.WebApiApplication.Application_Start">
+            <summary>
+            Application_Start event
+            </summary>
+        </member>
+    </members>
+</doc>

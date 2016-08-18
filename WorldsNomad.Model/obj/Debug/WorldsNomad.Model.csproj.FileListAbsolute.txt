@@ -1,0 +1,5 @@
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Model\bin\Debug\WorldsNomad.Model.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Model\bin\Debug\WorldsNomad.Model.pdb
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Model\obj\Debug\WorldsNomad.Model.csprojResolveAssemblyReference.cache
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Model\obj\Debug\WorldsNomad.Model.dll
+C:\Git\WorldsNomadInsurance\WorldsNomadCodeProject\WorldsNomad.Model\obj\Debug\WorldsNomad.Model.pdb

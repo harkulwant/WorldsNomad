@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Worlds Nomand API</title>
+	<meta charset="utf-8" />
+
+    <script type="text/javascript" src="js/angular/angular.min.js"></script>
+	<script type="text/javascript" src="js/calculator.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		.center-block {  
+			  display: block;  
+			  margin-right: auto;  
+			  margin-left: auto;
+			  width: 80% ;
+			  margin-top:5em;
+			}
+
+		.form-control{
+			margin-bottom: 2em;
+		}
+
+		.form-group{
+			margin-top: 2em;
+
+		}
+
+        .ng-invalid{
+            border: solid 1px red;
+        }
+
+        a.highlight{
+            letter-spacing:2px;
+            font-size:1.2em;
+            color:#0b4fa3;
+        }
+
+        .lookup-items{
+            margin-top:5em;
+            float:left;
+            width: 100%
+        }
+
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Worlds Nomad Web Api</a>
+			</div>
+			<ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="https://au.linkedin.com/in/harkulwant" target="_blank" class="highlight">Harkulwant Singh Hundal</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="center-block" ng-app="calculator" ng-controller="sequenceGenerator">
+		<div class="span12">
+			<h1>Number sequence calculator</h1>
+			<p>Enter a positive number and select the sequence type</p>
+
+
+			<div class="form-group">
+				<label for="usr">Number:</label>
+				<input type="text" class="form-control" ng-model="number" ng-class="!isModelValid() ? 'ng-invalid' : '' " />
+
+				<label for="sel1">Sequence</label>
+				<select class="form-control" id="sel1" ng-model="sequenceType">
+					<option value="">All</option>
+					<option value="number">Number</option>
+					<option value="odd">Odd</option>
+					<option value="even">Even</option>
+					<option value="special">Special</option>
+					<option value="fibonacci">Fibonacci</option>
+				</select>
+                <div style="width:100%; ">
+                    <div style="float:right">
+                        <a href="/swagger" target="_blank" class="btn btn-link btn-lg">API Documentation</a>
+                        <button type="button" class="btn btn-primary btn-lg" ng-click="calculate()" ng-disabled="disable">Calculate</button>
+                    </div>
+                </div>
+
+                <div name="show responses" class="lookup-items">
+                    <ul class="list-group" ng-repeat="response in responses">
+                        <li class="list-group-item"><span class="badge">{{response.Type}}</span> {{response.SequenceToString}}</li>
+                    </ul>
+                </div>
+			</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
